@@ -1,0 +1,9 @@
+This is my submission for the git task.
+
+Full name: Chukwuanieze Samson 
+
+Email: samsonnnamdi88@gmail.com
+
+Slack Username: Machin3ry
+
+Tracks: FrontEnd(HTML,CSS,JS), BackEnd(C#), Mobile(Flutter)
