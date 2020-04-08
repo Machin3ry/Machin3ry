@@ -13,9 +13,12 @@
 	
 	body{
     background-color: #062863;
-   /*---- background-image: url('https://res.cloudinary.com/machin3/image/upload/v1585850438/data1_bzbgql.png'), url('https://res.cloudinary.com/machin3/image/upload/v1585850438/data2_zvdizy.png'), url('https://res.cloudinary.com/machin3/image/upload/v1585850438/data3_qnsubn.png'), url('https://res.cloudinary.com/machin3/image/upload/v1585912852/data4_ak3tbo.png');
-   */
+   background-image: url('https://res.cloudinary.com/machin3/image/upload/v1585850438/data1_bzbgql.png')
+   , url('https://res.cloudinary.com/machin3/image/upload/v1585850438/data2_zvdizy.png'), url('https://res.cloudinary.com/machin3/image/upload/v1585850438/data3_qnsubn.png'), url('https://res.cloudinary.com/machin3/image/upload/v1585912852/data4_ak3tbo.png');
+   background-position: -10px -75px , 1170px -5px , -50px 550px, 1140px 530px;
+   background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: 15%;
 }
 header{
     text-align: center;
@@ -31,6 +34,7 @@ section{
     display: block;
     width: 450px;
     margin: 2.5rem auto;
+
 }
 h1{
     text-align: center;
@@ -106,6 +110,7 @@ button{
     font-size:0.875rem;
     font-weight:700;
     text-align: center;
+    cursor: pointer;
 }
 div{
     
@@ -155,7 +160,7 @@ option{
         <input type="email" placeholder="Email Address">
 
         <label for="number">Phone Number</label>
-        <input type="number" placeholder="Phone Number">
+        <input type="number" min="1" max="11"  placeholder="Phone Number">
 
         <label for="password">Password</label>
         <input type="password" placeholder="Password">
@@ -180,7 +185,7 @@ option{
         </select>
 
 
-        <button>CREATE ACCOUNT</button>
+        <button type="submit">CREATE ACCOUNT</button>
     </form>
     </section>
         <div><a href="https://dashboard.piggyvest.com/login">Already have an account? Log In</a></div>
