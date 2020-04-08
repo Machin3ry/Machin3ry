@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="shortcut icon" href="https://res.cloudinary.com/machin3/image/upload/v1585850469/favicon_wv13cs.ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet"> 
+    <title>PiggyVest | Dashboard</title>
+	
+	<style>
+	
+	body{
+    background-color: #062863;
+   /*---- background-image: url('https://res.cloudinary.com/machin3/image/upload/v1585850438/data1_bzbgql.png'), url('https://res.cloudinary.com/machin3/image/upload/v1585850438/data2_zvdizy.png'), url('https://res.cloudinary.com/machin3/image/upload/v1585850438/data3_qnsubn.png'), url('https://res.cloudinary.com/machin3/image/upload/v1585912852/data4_ak3tbo.png');
+   */
+    background-repeat: no-repeat;
+}
+header{
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 1.6rem;
+    margin-top: 1rem;
+    padding-top:2rem;
+    
+}
+section{
+    background-color: #fff;
+    border-radius:1.25em 1.25em 1.25em 0em;
+    display: block;
+    width: 450px;
+    margin: 2.5rem auto;
+}
+h1{
+    text-align: center;
+    color: #083e9e;
+    font-family: 'Arial';
+    margin:1.5em 0em 0em 0em;
+    padding-top: 2em;
+    font-weight: 700;
+    font-size:1.5em;
+    line-height: 1.5em
+    
+}
+p{
+    text-align: center;
+    font-family: 'Karla';
+    color: #4a5568;
+    line-height: 1.5em;
+    margin-top: 0em;
+    font-size:0.9em;
+}
+label{
+    font-weight: bold;
+    color:#4a5568;
+    font-family: 'Karla';
+    display: block;
+    font-size:0.75rem;
+    margin-bottom: 0.1rem;
+    margin-left: 25px;
+    line-height: 2rem;
+}
+input{
+    color:#1a202c;
+    background-color: #edf2f7;
+    padding:1.2rem 1.2rem 1.2rem 1.2rem;
+    border:none;
+    width: 80%;
+    outline: none;
+    border-radius: 0.25rem;
+    margin-bottom:2rem;
+    margin-left: 25px;
+    
+}
+input::placeholder{
+    color:#aeb8d3;
+    border:0;
+    font-size: 1.2em;
+
+}
+select{
+    color:#1a202c;
+    background-color: #edf2f7;
+    padding:1rem 1rem 1rem 1rem;
+    border:none;
+    width: 87%;
+    outline: none;
+    border-radius: 0.25rem;
+    margin-bottom:2rem;
+    margin-left: 25px;
+}
+
+button{
+    background-color: rgb(8, 62, 158);
+    color: #fff;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1rem;
+    border:none;
+    border-radius:0.75em 0.75em 0.75em 0em;
+    width:87%;
+    margin-left: 25px;
+    margin-bottom: 2.5rem;
+    font-size:0.875rem;
+    font-weight:700;
+    text-align: center;
+}
+div{
+    
+    margin-bottom:4rem;
+    text-align: center;
+    
+}
+a{
+    font-size: 0.8rem;
+    font-weight:400;
+    font-family: 'Karla';
+    color:#fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+a:hover{
+    color:#a6afbb;;
+}
+form{
+    padding:0.5rem;
+}
+option{
+    color:black;
+    background-color:#fff;
+    margin: 2rem;
+}
+	
+	</style>
+	
+	
+	
+	
+</head>
+
+<body>
+    <header><a href="https://www.piggyvest.com"><img src="https://res.cloudinary.com/machin3/image/upload/v1585850469/piggy_ncz4e5.svg" alt="logo"></a></header>
+    <section>
+    <h1>Create a Secure Account</h1>
+    <p>Welcome to the future of Savings & Investments</p>
+
+    <form action="#" method="POST">
+
+        <label for="name">Full Name</label>
+        <input type="name" placeholder="Full Name" >
+
+        <label for="email">Email Address</label>
+        <input type="email" placeholder="Email Address">
+
+        <label for="number">Phone Number</label>
+        <input type="number" placeholder="Phone Number">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password">
+
+        <label for="code">Referrer Phone or Promo Code (Optional)</label>
+        <input type="text" placeholder="Referrer Phone or Code">
+
+        <label>How Did You Hear About Us? (Optional)</label>
+        <select name="refer" id="refer">
+            <option >Click to Select</option>
+            <option value="Facebook">Facebook</option>
+            <option value="Twitter">Twitter</option>
+            <option >Instagram</option>
+            <option >Facebook</option>
+            <option >Friend/Family/Coworker Referral</option>
+            <option >Google Search</option>
+            <option>Google Playstore</option>
+            <option >Online Blog</option>
+            <option >Local Newspaper</option>
+            <option >At an event</option>
+            <option >Other</option>
+        </select>
+
+
+        <button>CREATE ACCOUNT</button>
+    </form>
+    </section>
+        <div><a href="https://dashboard.piggyvest.com/login">Already have an account? Log In</a></div>
+        
+        
+</body>
+</html>
