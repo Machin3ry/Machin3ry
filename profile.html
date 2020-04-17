@@ -8,20 +8,96 @@
     <style>
         body{
             font-family: Tahoma, Geneva, Verdana, sans-serif;
-        }
-        header{
-            border:1px solid #333;
-            border-radius: 5px;
-            padding: 0px 0px 00px;
-        }
-        section{    
-            border:1px solid #333;
-            border-radius: 5px;
-            padding: 30px 0px 30px;
+            background-color:rgb(98, 59, 102);;
+            color: #fff;
             
         }
+        
         .container{
             width: 100%;
+        }
+        header{
+            border:1px solid #fff;
+            border-radius: 1em;
+            padding: 2em 1em 1em 1em;
+            margin: 2em;
+        
+        }
+        .gridd{
+            display: grid;
+            grid-template-columns: 5fr 1fr;
+        }
+        h1{
+            border-bottom: 0.1em solid rgb(186, 124, 192);
+            width: 95%;
+            color:#fff;
+            
+        }
+
+        section{    
+            border:1px solid #fff;
+            border-radius: 5px;
+            padding: 0 1em 0 1em;
+            border-radius: 1em;
+            margin: 2em;
+            
+        }
+        h3{
+            border-bottom: 0.1em solid rgb(186, 124, 192);
+            
+            color:#fff;
+        }
+        .grid1 div{
+            margin-bottom: 1em;
+        }
+        
+        input{
+            width: 100%;
+            border-radius:0.2em;
+            border: 1px solid #645;
+            height: 2.5em;
+        }
+        input[type="submit"]{
+            width:8em;
+        }
+        input::placeholder,textarea::placeholder{
+            padding-left:1em;
+            font-family: Tahoma, Geneva, Verdana, sans-serif;
+        }
+        input[type="submit"]{
+            background-color: rgb(163, 89, 170);
+            color:#fff;
+            font-weight: bold;
+        }
+        textarea{
+            border-radius:0.2em;
+            border: 1px solid #645;
+            width:99%;
+            resize: none;
+        }
+
+        img{
+            height: 6em;
+            position: right;
+        }
+
+
+
+        @media (min-width: 900px){
+            
+            .grid{
+                display: grid;
+                grid-template-columns:2fr 1fr;
+            }
+        }
+
+        @media (min-width: 600px){
+            .grid1{
+            display: grid;
+            grid-template-columns:1fr 1fr;
+            gap: 1em 1em;
+            
+        }
         }
     </style>
 
@@ -30,26 +106,56 @@
 </head>
 <body>
     <div class ="container">
-        <header>
-            <h1>C. Samson</h1>
-            <p>A laser-focused individual with knack for technology</p>
+        <header class="gridd">
+           <div> <h1>C. Samson</h1></div>
+            
+        <div>  <img src="https://res.cloudinary.com/machin3/image/upload/v1566622476/IMG_20190113_175724_iv9ikf.jpg" alt="My picture"></div>
         </header>
-
+        
+        <div class="grid">
         <section>
-            <p>Bio- Data</p>
-            <p>state of origin</p>
-            <p>address</p>
-            <p> date  of birth</p>
-            <p> occupation</p>
-            <p>hometown</p>
-            <p>slack id</p>
-            <p>picture</p>
-            <p> summary containing interest and hobbies</p>
+            <h3>Bio- Data</h3>
+            <div class="grid1">
+            <div>State of origin: Lagos</div>
+            <div>Address: 11, Agboola Close, Ikotun.</div>
+            <div>Date  of Birth: 13th March, 1988</div>
+            <div>Occupation: FrontEnd Developer</div>
+            <div>Hometown: Ikirun Epe.</div>
+            <div>Slack ID: Machin3ry</div>
+            </div>
+            <article>
+                <h3>Summary</h3>
+                <p>
+                    Hi, there!
+                    My name is Samson and I am a frontend web developer, I create beautiful, interactive and amazing web pages using several tools,these tools include HTML, CSS, Bootstrap and JavaScript.
+                    Tech is absolutely beautiful and as such I have interests in network and security.
+                </p>
+                <p>
+                    When I am not programming you'll catch me swimming, playing chess or watching action-based movies.
+                    
+                    OH! When the stress is much, I hit the club to shake it all of!
+
+                   
+                </p>
+                <p>
+                    Do you need to contact me? Use the form.
+
+                </p>
+            </article>
+            
         </section>
 
         <section>
-            <form action=""></form>
+            <h3>Contact Me</h3>
+            <form action="#" method="POST">
+                <p> <input type="text" placeholder="Name" required></p>
+                <p>  <input type="email" placeholder="Email" required></p>
+               
+                <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter Message"></textarea>
+               <p><input type="submit" value="CONTACT ME"></p> 
+            </form>
         </section>
+        </div>
     </div>
 </body>
 </html>
